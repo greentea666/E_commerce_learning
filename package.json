@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ecpay_aio_nodejs": "^1.0.2"
+  }
+}

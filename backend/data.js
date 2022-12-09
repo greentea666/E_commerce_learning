@@ -1,0 +1,85 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+  users: [
+    {
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      // _id: '1',
+      name: 'adidas Shoes',
+      slug: 'adidas-Shoes',
+      category: 'Shirts',
+      image: '/images/adidas.jpg', // 679px × 829px
+      price: 120,
+      countInStock: 10,
+      brand: 'adidas',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'high quality shirt',
+    },
+    {
+      // _id: '2',
+      name: 'converse Shoes',
+      slug: 'converse-Shoes',
+      category: 'Shirts',
+      image: '/images/converse.jpg',
+      price: 250,
+      countInStock: 0,
+      brand: 'converse',
+      rating: 4.0,
+      numReviews: 10,
+      description: 'high quality product',
+    },
+    {
+      // _id: '3',
+      name: 'newbalance Shoes',
+      slug: 'newbalance-Shoes',
+      category: 'Pants',
+      image: '/images/newbalance.jpg',
+      price: 25,
+      countInStock: 15,
+      brand: 'newbalance',
+      rating: 4.5,
+      numReviews: 14,
+      description: 'high quality product',
+    },
+    {
+      // _id: '4',
+      name: 'nikeShoes Shoes',
+      slug: 'nikeShoes-Shoes',
+      category: 'Pants',
+      image: '/images/nikeShoes.jpg',
+      price: 65,
+      countInStock: 5,
+      brand: 'nikeShoes',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'high quality product',
+    },
+    {
+      name: 'Reebok Shoes',
+      slug: 'Reebok Shoes',
+      category: 'Shoes',
+      image: '/images/rebok.jpg', // 679px × 829px
+      price: 120,
+      countInStock: 10,
+      brand: 'reebok',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'high quality shirt',
+    },
+  ],
+};
+export default data;
